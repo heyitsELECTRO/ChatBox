@@ -1,0 +1,146 @@
+.chat-room {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.room-title {
+  text-align: center;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+.message-list {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.message {
+  max-width: 70%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.message .username {
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+  color: var(--text-secondary);
+}
+
+
+.message .bubble {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  position: relative;
+  word-wrap: break-word;
+}
+
+
+.message .time {
+  font-size: 0.65rem;
+  margin-top: 0.25rem;
+  align-self: flex-end;
+  color: var(--text-secondary);
+}
+
+
+.message.sent {
+  align-self: flex-end;
+}
+.message.sent .username {
+  text-align: right;
+  color: var(--accent-color);
+}
+.message.sent .bubble {
+  background: var(--accent-color);
+  color: var(--bg-primary);
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.bubble {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+.message.received {
+  align-self: flex-start;
+}
+.message.received .username {
+  text-align: left;
+  color: var(--text-secondary);
+}
+.message.received .bubble {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.message-input {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  gap: 0.5rem;
+}
+
+.message-input textarea {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid var(--text-secondary);
+  border-radius: 20px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  resize: none;
+  min-height: 20px;
+  max-height: 120px;
+  overflow-y: auto;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.message-input textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.message-input button {
+  padding: 0.75rem 1.5rem;
+  background: var(--accent-color);
+  border: none;
+  color: var(--bg-primary);
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.message-input button:hover {
+  opacity: 0.9;
+}
+
+
+.message-input textarea {
+  transition: height 0.2s ease;
+}

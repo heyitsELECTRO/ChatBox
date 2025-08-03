@@ -1,0 +1,13 @@
+.emoji-picker-wrapper {
+  position: relative;
+}
+.emoji-picker-wrapper button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+.emoji-picker-wrapper .emoji-picker-react {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+}

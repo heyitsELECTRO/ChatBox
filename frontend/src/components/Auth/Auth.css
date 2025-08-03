@@ -1,0 +1,83 @@
+.auth-form {
+  max-width: 400px;
+  margin: 5rem auto;
+  background: var(--bg-secondary);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 2px solid var(--text-secondary);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: border-color 0.3s ease;
+}
+
+.auth-form:hover {
+  border-color: var(--accent-color);
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: 1px solid var(--text-secondary);
+  border-radius: 6px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: border-color 0.3s ease;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+  border: 2px solid var(--accent-color);
+  border-radius: 6px;
+  background: var(--bg-primary);
+  color: var(--accent-color);
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background: var(--accent-color);
+  color: var(--bg-primary);
+}
+
+.auth-form .error {
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.auth-nav {
+  display: flex;
+  justify-content: flex-end;
+  background: var(--bg-primary);
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+.auth-nav button {
+  background: var(--accent-color);
+  color: var(--bg-primary);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-nav button:hover {
+  background: var(--text-secondary);
+}
