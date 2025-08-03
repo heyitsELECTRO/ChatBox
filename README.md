@@ -1,4 +1,3 @@
-ChatBox
 ChatBox is a real-time, secure and user-friendly chat web application built on the MERN stack (MongoDB, Express, React, Node.js) with Socket.IO for live messaging.
 
 Features
